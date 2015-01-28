@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="bookApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bookshop</title>   
+    <link rel="stylesheet"   href="css/bootstrap.min.css"/>
+    <link rel="stylesheet"   href="css/app.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="books">The Bookshop</a>
+            </div>
+             
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row top-buffer">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+    <script   src="lib/angular.min.js"></script>
+     <script   src="lib/angular-ui-router.min.js"></script>
+     <script   src="lib/angular-resource.min.js"></script>
+     <script   src="js/angu-fixed-header-table.js"></script>
+     <script   src="js/services.js"></script>
+     <script   src="js/controllers.js"></script>
+    <script   src="js/app.js"></script>
+  
+</body>
+</html>
